@@ -1,11 +1,11 @@
 import pandas as pd
 import os
-import sqlite3
+import sqlite3 #lightweight embedded database
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
-import joblib
+import joblib#Saving/loading models
 
 #Loading Dataset
 
@@ -119,4 +119,5 @@ joblib.dump(label_target, ENCODER_PATH)
 print(f"Label Encoder saved successfully at: {ENCODER_PATH}")
 
 conn.close()
+
 print("\nStep complete: model training + saving finished successfully!")
