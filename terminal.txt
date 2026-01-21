@@ -1,0 +1,5 @@
+& "C:\Users\Shirsh Barnwal\OneDrive\Desktop\AIML\HR Chatbot\venv\Scripts\Activate.ps1"
+
+streamlit run chatbot_app.py
+
+streamlit run app.py
